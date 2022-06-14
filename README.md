@@ -1,17 +1,17 @@
 # MONSTER SAKU
 
-## Tugas Besar Kelompok 18 - GWS
+## Final Project Team 18 - GWS
 
 ### Deskripsi Program
-Game Monster Saku ini merupakan game yang dapat dimainkan oleh 2 orang pemain. Setiap pemain mendapatkan 6 monster secara random. Lalu 1 monster random dipilih untuk menjadi current monster tiap pemain. Setiap monster memiliki beberapa moves, stats, dan element types masing-masing. 
+This Pocket Monster Game is a game that can be played by 2 players. Each player gets 6 monsters randomly. Then 1 random monster is chosen to be the current monster for each player. Each monster has its own moves, stats, and element types.
 
-Terdapat empat jenis move dari masing-masing monster yaitu normal move, special move, default move, dan status move. Masing-masing move memiliki ammunition yang menandakan berapa kali move dapat digunakan. Default move memiliki ammunition tidak terbatas dan selalu dapat digunakan. Status move dapat menyebabkan monster (baik sendiri maupun monster lawan) mengalami suatu status condition tertentu yang berpengaruh pada stats monster atau perubahan pada stats buff. Terdapat juga element type masing-masing monster dan move yang memiliki efektivitas penyerangan masing-masing.
+There are four types of moves from each monster, namely normal moves, special moves, default moves, and status moves. Each move has ammunition which indicates the number of times the move can be used. The default move has unlimited ammunition and can always be used. Status moves can cause monsters (both themselves and enemy monsters) to experience a certain status condition that affects the monster's stats or changes to the stats buff. There are also element types of each monster and move that have their own attack effectiveness.
 
-Saat giliran pemain, pemain dapat memilih 1 dari 2 battle commands, yaitu memilih move dari current monster untuk ditandingkan dengan current monster lawan atau mengganti current monster dengan monster lain yang masih hidup. 
+When it's the player's turn, the player can choose 1 of 2 battle commands, namely choosing a move from the current monster to be matched with the opponent's current monster or replacing the current monster with another monster that is still alive.
 
-Jika kedua pemain memilih move, maka kedua move akan dibandingkan priority-nya. Priority move yang lebih besar akan bergerak lebih dahulu. Jika priority-nya sama, maka move yang lebih dahulu dieksekusi adalah monster dengan speed yang lebih tinggi. Jika speed kedua monster sama, maka akan di-random urutannya. Jika salah satu pemain memilih untuk switch current monster dan yang lainnya memilih move, maka current monster akan ditukar terlebih dahulu lalu dilakukan move. Jika kedua pemain memilih untuk switch current monster, maka kedua current monster pemain akan berganti dan langsung bergerak ke turn selanjutnya. Permainan akan berakhir dan dimenangkan pemain jika semua monster dari pemain lawan sudah mati.
+If both players choose a move, the priority of the two moves will be compared. The bigger priority move will move first. If the priority is the same, then the move that is executed first is the monster with a higher speed. If the speed of the two monsters is the same, the order will be randomized. If one player chooses to switch the current monster and the other chooses to move, then the current monster will be exchanged first and then a move is made. If both players choose to switch current monsters, then both players' current monsters will switch and move directly to the next turn. The game will end and the player will win if all the monsters of the opposing player are dead.
 
-### Anggota Kelompok 18 - GWS
+### Team Member 18 - GWS
 Michael Ryan Martin 
 
 Akmal Jauhar Sidqi
@@ -20,18 +20,18 @@ Dewa Ayu Mutiara Kirana P D
 
 Gresya Angelina E Leman
 
+### How to Compile the Program :
+#### [1] Using Gradle
+1. Clone this repository. In addition to cloning the repository, this repository folder can be downloaded in the form of a .zip file, then extracted to a folder on the device used to run the program.
+2. Open a terminal, then open the folder IF2212-Monster-Pocket-Game
+3. Enter the command "gradlew build", then press enter.
+4. After a successful build, enter the command "gradlew run" or you can also use the command "gradlew -q --console plain run" for a cleaner look. Then, press enter.
 
-### Cara Kompilasi Program :
-#### [1] Menggunakan Gradle
-1. Clone repository ini. Selain melakukan clone repository, folder repository ini dapat di-download dalam bentuk file.zip, lalu di-extract ke suatu folder pada device yang digunakan untuk menjalankan program.
-2. Buka terminal, lalu buka folder IF2212-Monster-Saku-Game
-3. Masukkan command "gradlew build", kemudian tekan enter.
-4. Setelah success build, masukkan command "gradlew run" atau dapat juga menggunakan command "gradlew -q --console plain run" untuk tampilan yang lebih rapi/bersih. Lalu, tekan enter.
+#### [2] If Using Java Compiler
+1. Download and set up the java compiler on the device that will be used.
+2. Clone this repository.
+3. Apart from cloning the repository, this repository folder can be downloaded in the form of a .zip file, then extracted to a folder on the device used to run the program.
+4. In running this program, there are 3 configuration files,
+namely element-type-effectivity-chart.csv, monsterpool.csv, and movepool.csv, which can be accessed at ...\IF2212-Monster-Pocket-Game\src\main\resources\com\mymonsters\configs
 
-#### [2] Menggunakan Compiler Java
-1. Download dan set up compiler java pada device yang akan digunakan.
-2. Clone repository ini.
-3. Selain melakukan clone repository, folder repository ini dapat di-download dalam bentuk file.zip, lalu di-extract ke suatu folder pada device yang digunakan untuk menjalankan program.
-4. Dalam menjalankan program ini, terdapat 3 buah file konfigurasi, yaitu element-type-effectivity-chart.csv, monsterpool.csv, dan movepool.csv, yang dapat diakses pada ...\IF2212-Monster-Saku-Game\src\main\resources\com\monstersaku\configs
-
-Note : file konfigurasi dapat diubah-ubah sesuai kebutuhan.
+Note: the configuration file can be changed as needed.
